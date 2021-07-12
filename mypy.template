@@ -1,0 +1,25 @@
+# Global options:
+
+[mypy]
+python_version = 3.9
+warn_return_any = True
+warn_unused_configs = True
+ignore_missing_imports = True
+disallow_subclassing_any = False
+disallow_any_generics = False
+disallow_untyped_calls = True
+disallow_untyped_defs = True
+disallow_incomplete_defs = True
+check_untyped_defs = True
+no_implicit_optional = True
+warn_redundant_casts = True
+warn_unused_ignores = True
+
+plugins =
+    mypy_django_plugin.main
+
+[mypy.plugins.django-stubs]
+django_settings_module = "{PROJECT_NAME}.settings"
+
+[mypy-*.tests.*]
+ignore_errors = True

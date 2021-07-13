@@ -55,5 +55,5 @@ echo "Initialization succeeded!"
 echo "Start the python env by running: source $ENV/bin/activate"
 echo "Start the docker container by running: docker-compose up -d"
 echo "Start the django server by running: ./manage.py runserver"
-echo "Navigate to: http://localhost:8008"
+echo "Navigate to: http://localhost:8000"
 

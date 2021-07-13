@@ -4,6 +4,7 @@ set -e
 if [ -z "$1" ]
   then
     echo "No project name were supplied!"
+    echo -e "\t ./setup.sh <project_name>"
     exit 1
 fi
 

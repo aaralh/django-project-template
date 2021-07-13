@@ -45,6 +45,7 @@ mv tmp_files/* . && rm -r tmp_files
 
 sed -e "s/{PROJECT_NAME}/$1/g" settings.template > $1/settings.py
 sed -e "s/{PROJECT_NAME}/$1/g" mypy.template > mypy.ini
+mv env.template .env
 echo -e "$ENV/" >> .gitignore
 rm settings.template
 rm mypy.template

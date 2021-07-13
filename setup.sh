@@ -26,7 +26,7 @@ DIR=".git"
 if [ -d "$DIR" ]; then
     echo "Removing current git connection:"
     echo "rm -r .git/"
-    rm -r .git/
+    rm -rf .git/
 fi
 
 echo "Initializing new git repository:"

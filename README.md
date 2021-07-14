@@ -1,4 +1,4 @@
-# django-project-template
+# Django project template
 Template to get started quickly with Django, PostgreSQL and Docker.
 
 
